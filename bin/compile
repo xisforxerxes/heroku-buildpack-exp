@@ -68,7 +68,7 @@ if [ -z "${APP_NX_PROJECT}" ] ; then
 fi
 
 echo "Installing nx" | banner
-npm ci -D nx |& indent
+npm i -D nx |& indent
 
 echo "Checking if project: ${APP_NX_PROJECT} is affected by changeset." | banner
 
