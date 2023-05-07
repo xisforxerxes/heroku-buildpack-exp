@@ -73,7 +73,7 @@ npm ci -D nx |& indent
 echo "Checking if project: ${APP_NX_PROJECT} is affected by changeset." | banner
 
 AFFECTED="$(
-  npm nx affected:is_affected --base=main --head=HEAD --exclude='!'"${APP_NX_PROJECT}"',*'
+  npm nx affected:is_affected --base=main --head=HEAD --exclude='!'"${APP_NX_PROJECT}"',*' \
   | grep "> nx run ${APP_NX_PROJECT}:is_affected"
 )"
 
